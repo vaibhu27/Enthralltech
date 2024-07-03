@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
+    <!-- Mobile Number Input -->
+    <EditText
+        android:id="@+id/etMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:layout_marginTop="100dp"
+        android:inputType="phone" />
+
+    <!-- M-PIN Input -->
+    <TextView
+        android:id="@+id/et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M-PIN"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/etMobile"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etMpin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <EditText
+        android:id="@+id/etMpin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/etMpin1"
+        android:layout_toRightOf="@id/etMpin1"
+        android:layout_below="@id/et"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <EditText
+        android:id="@+id/etMpin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/etMpin2"
+        android:layout_toRightOf="@id/etMpin2"
+        android:layout_below="@id/et"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <EditText
+        android:id="@+id/etMpin4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/etMpin3"
+        android:layout_toRightOf="@id/etMpin3"
+        android:layout_below="@id/et"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <!-- Confirm M-PIN Input -->
+    <TextView
+        android:id="@+id/etConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm M-PIN"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/etMpin1"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etConfirmMpin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etConfirm"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <EditText
+        android:id="@+id/etConfirmMpin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/etConfirmMpin1"
+        android:layout_toRightOf="@id/etConfirmMpin1"
+        android:layout_below="@id/etConfirm"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <EditText
+        android:id="@+id/etConfirmMpin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etConfirm"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@id/etConfirmMpin2"
+        android:layout_toRightOf="@id/etConfirmMpin2"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <EditText
+        android:id="@+id/etConfirmMpin4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/etConfirmMpin3"
+        android:layout_toRightOf="@id/etConfirmMpin3"
+        android:layout_below="@id/etConfirm"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <!-- Signup Button -->
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etConfirmMpin1"
+        android:layout_marginTop="20dp"
+        android:text="Signup" />
+
+</RelativeLayout>

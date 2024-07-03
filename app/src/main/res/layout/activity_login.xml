@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/logintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        />
+
+    <EditText
+        android:id="@+id/etMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Mobile Number"
+        android:layout_below="@+id/logintext"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M-PIN"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/etMobile"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:id="@+id/etMpin1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <EditText
+        android:id="@+id/etMpin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/etMpin1"
+        android:layout_toRightOf="@id/etMpin1"
+        android:layout_below="@id/et"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <EditText
+        android:id="@+id/etMpin3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/etMpin2"
+        android:layout_toRightOf="@id/etMpin2"
+        android:layout_below="@id/et"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <EditText
+        android:id="@+id/etMpin4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnLogin"
+        android:layout_below="@id/et"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_toEndOf="@id/etMpin3"
+        android:layout_toRightOf="@id/etMpin3"
+        android:inputType="number"
+        android:maxLength="1" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMpin1"
+        android:layout_marginTop="20dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="20dp"
+        android:text="Signup" />
+
+</RelativeLayout>
